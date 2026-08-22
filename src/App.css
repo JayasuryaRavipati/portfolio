@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Temporary sections */
+
+.placeholder-section {
+  min-height: 500px;
+
+  padding: 100px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid var(--border-color);
+}
+
+.placeholder-section h2 {
+  font-size: 48px;
+}

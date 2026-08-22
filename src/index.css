@@ -1,0 +1,233 @@
+/* =========================================
+   GLOBAL THEME
+========================================= */
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-card: #ffffff;
+
+  --text-primary: #18181b;
+  --text-secondary: #73737d;
+  --text-muted: #a1a1aa;
+
+  --border-color: #eeeeef;
+
+  --accent: #ff642d;
+  --accent-hover: #e95522;
+  --accent-light: #fff1e9;
+
+  --dark-card: #18181b;
+
+  --transition: 0.3s ease;
+  --content-width: 1200px;
+  --section-space: clamp(72px, 8vw, 110px);
+  --soft-shadow: 0 18px 45px rgba(24, 24, 27, 0.08);
+}
+
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+[data-theme="dark"] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #111827;
+  --bg-card: #151b24;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  --border-color: #272d36;
+
+  --accent: #ff7043;
+  --accent-hover: #ff835d;
+  --accent-light: #2a1b16;
+
+  --dark-card: #151b24;
+  --soft-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(
+    var(--border-color) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 24px 24px;
+
+  color: var(--text-primary);
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 100, 45, 0.025) 48%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+main > section {
+  position: relative;
+  scroll-margin-top: 86px;
+  animation: sectionReveal 0.7s both;
+}
+
+main > section::before {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+  left: max(24px, calc((100% - var(--content-width)) / 2));
+
+  width: 56px;
+  height: 2px;
+
+  background: var(--accent);
+  transform-origin: left;
+  animation: accentLine 0.8s 0.25s both;
+}
+
+main > section:nth-child(2) {
+  animation-delay: 0.06s;
+}
+
+main > section:nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+main > section:nth-child(4) {
+  animation-delay: 0.18s;
+}
+
+main > section:nth-child(5) {
+  animation-delay: 0.24s;
+}
+
+main > section:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+main > section:nth-child(7) {
+  animation-delay: 0.36s;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(255, 100, 45, 0.35);
+  outline-offset: 3px;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes accentLine {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   GLOBAL THEME TRANSITION
+========================================= */
+
+body,
+section,
+nav,
+header,
+footer,
+main,
+div,
+article,
+button,
+input,
+textarea {
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
