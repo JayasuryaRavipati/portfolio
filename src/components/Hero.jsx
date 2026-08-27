@@ -32,11 +32,10 @@ const Hero = () => {
 
           <p className="hero-description">
             I'm a{" "}
-            <strong>Full Stack Developer & Data Analyst</strong>{" "}
+            <strong>Full Stack Developer</strong>{" "}
             who builds modern, responsive, and user-friendly
-            web applications and transforms data into
-            meaningful insights using React, JavaScript,
-            Node.js, Python, SQL, and MongoDB.
+            web applications from database to deployment using
+            React, JavaScript, Node.js, Express.js, and MongoDB.
           </p>
 
           {/* Buttons */}

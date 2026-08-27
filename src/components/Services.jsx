@@ -11,16 +11,16 @@ const services = [
   },
   {
     icon: "◈",
-    title: "Frontend Development",
+    title: "Backend & API Development",
     description:
-      "Modern, responsive and user-friendly interfaces using React, JavaScript, HTML and CSS. Focused on clean code, performance, accessibility and smooth user experiences.",
+      "Secure REST APIs and backend services built with Node.js, Express.js, and MongoDB, including authentication, validation, business logic, and reliable data flows.",
     featured: false,
   },
   {
     icon: "◔",
-    title: "Data Analysis",
+    title: "Database & Integration",
     description:
-      "Transforming raw data into meaningful insights using Python, SQL, Pandas and data visualization. I analyze trends, identify patterns and create clear dashboards to support better decisions.",
+      "Connecting frontend applications to databases and third-party services with maintainable architecture, reusable components, and production-ready integrations.",
     featured: false,
   },
 ];

@@ -49,7 +49,7 @@ const Education = () => {
 
           <p>
   My academic journey and the foundation that shaped my skills
-  in software development, web technologies, and data analysis.
+  in software development, web technologies, and product building.
 </p>
         </div>
 

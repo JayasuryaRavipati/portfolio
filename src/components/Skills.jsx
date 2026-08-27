@@ -26,15 +26,15 @@ const skillGroups = [
     ],
   },
   {
-    title: "Data Analysis",
+    title: "Full Stack Engineering",
     skills: [
-      "Python",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Power BI",
-      "Excel",
+      "TypeScript",
+      "Redux",
+      "JWT Authentication",
+      "API Integration",
+      "Database Design",
+      "Deployment",
+      "Testing",
     ],
   },
   {
@@ -69,8 +69,8 @@ const Skills = () => {
 
           <p className="skills-intro">
             Technologies and tools I use to build modern web
-            applications, develop backend systems, and transform
-            data into meaningful insights.
+            applications, develop backend systems, connect services,
+            and deliver reliable products from idea to deployment.
           </p>
         </div>
 

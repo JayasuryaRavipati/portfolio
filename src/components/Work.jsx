@@ -3,8 +3,6 @@ import "./Work.css";
 
 import smartMapImage from "../assets/smartmap.png";
 import requestHubImage from "../assets/requesthub.png";
-import dataScienceImage from "../assets/ds.png";
-import warehouseImage from "../assets/routeiq.png";
 
 const projects = [
   {
@@ -25,26 +23,6 @@ const projects = [
       "A full-stack mobile service platform that allows users to create, manage, and track service requests with a smooth and responsive user experience.",
     featured: false,
     demo: "https://request-hub-52.vercel.app/",
-  },
-
-  {
-    image: dataScienceImage,
-    tags: ["Python", "Pandas", "Data Analytics"],
-    title: "Employee Attrition Analysis",
-    description:
-      "A data analytics project that analyzes employee attrition patterns, identifies key factors influencing employee turnover, and presents actionable insights through data visualization.",
-    featured: false,
-    demo: "",
-  },
-
-  {
-    image: warehouseImage,
-    tags: ["MERN", "Python", "Flask"],
-    title: "Warehouse Management System",
-    description:
-      "A full-stack warehouse management platform for inventory tracking, product management, warehouse operations, and intelligent data-driven insights.",
-    featured: false,
-    demo: "",
   },
 ];
 

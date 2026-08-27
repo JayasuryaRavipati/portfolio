@@ -9,11 +9,10 @@ const skills = [
   "Node.js",
   "Express.js",
   "MongoDB",
-  "Python",
-  "SQL",
-  "Pandas",
-  "NumPy",
-  "Power BI",
+  "TypeScript",
+  "Tailwind CSS",
+  "Figma",
+  "REST APIs",
   "Git / GitHub",
 ];
 
@@ -45,18 +44,18 @@ const About = () => {
           </h2>
 
           <p className="about-text">
-            I'm Jayasurya, a Full Stack Developer and Data Analyst
-            who enjoys building modern web applications and turning
-            data into meaningful insights. I work with technologies
-            like React, JavaScript, Node.js, MongoDB, Python, and SQL
-            to create practical and user-focused digital solutions.
+            I'm Jayasurya, a Full Stack Developer who enjoys building
+            complete web applications from intuitive interfaces to
+            reliable backend systems. I work with React, JavaScript,
+            Node.js, Express.js, MongoDB, and TypeScript to create
+            practical and user-focused products.
           </p>
 
           <p className="about-text">
             I enjoy solving real-world problems through clean code,
-            thoughtful interfaces, and data-driven thinking. My goal
-            is to build applications that are fast, responsive, easy
-            to use, and backed by meaningful insights from data.
+            well-designed APIs, secure data flows, and accessible
+            interactions. My goal is to build applications that are
+            reliable, scalable, and easy to use.
           </p>
 
           {/* STACK */}
